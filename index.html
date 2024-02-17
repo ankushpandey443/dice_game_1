@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Dice Game</title>
+</head>
+<body>
+  <div class="container">
+    <div class="count">Infinite</div>
+    <div class="screen2" style="display: none;">
+      <div class="cross">
+        <svg width = "30" height="30">
+          <line x1="0" y1="0" x2="30" y2="30" stroke="black" stroke-width="2"></line>
+          <line x1="30" y1="0" x2="0" y2="30" stroke="black" stroke-width="2"></line>
+        </svg>
+      </div>
+      <div class="reset">Reset</div>
+      <div class="total">
+        <div><h2>Player 1</h2>
+        <h2>Player 2</h2></div>
+        <div>
+          <h2>0</h2>
+          <h2>0</h2>
+        </div>
+      </div>
+    </div>
+    <h1>Roll the Dice</h1>
+    <div class="incont">
+      <h3>Player 1</h3>
+      <h2 class="result"></h2>
+      <h3>Player 2</h3>
+    </div>
+    <div class="incont">
+      <div class="left">0</div>
+      <div class="right">0</div>
+    </div>
+    <button type="button" onclick="roll()">Roll Dice</button>
+    <p class="board">Results</p>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
